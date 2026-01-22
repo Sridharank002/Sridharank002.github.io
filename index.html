@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sridharan – Portfolio</title>
+    <meta name="description" content="Portfolio website of Sridharan – Full‑Stack / Front‑End Developer. Projects, skills, experience, and contact." />
+    <meta name="theme-color" content="#0ea5e9" id="theme-color" />
+
+    <!-- Open Graph / Twitter (fill in your handles/URLs) -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Sridharan – Portfolio" />
+    <meta property="og:description" content="Full‑Stack / Front‑End Developer – projects, skills, experience." />
+    <meta property="og:image" content="/preview.png" />
+    <meta property="og:url" content="https://your-domain.com" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- SEO Schema (customize) -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Sridharan",
+            "url": "https://your-domain.com",
+            "sameAs": ["https://github.com/youruser", "https://www.linkedin.com/in/sridharan8847/"],
+            "jobTitle": "Full‑Stack Developer",
+            "description": "Developer specializing in HTML, CSS, JavaScript, Python.",
+            "image": "https://your-domain.com/avatar.jpg"
+        }
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="container nav" role="navigation" aria-label="Main">
+            <a class="brand" href="#home" aria-label="Home">
+                <!-- Inline logo icon -->
+                <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3l8.5 4.9v7.2L12 20.8 3.5 15.1V7.9L12 3z" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M12 7l5.5 3.2v4.6L12 18l-5.5-3.2V10.2L12 7z" fill="currentColor" opacity=".15"/>
+        </svg>
+                <span>Sridharan</span>
+            </a>
+            <nav>
+                <button class="hamburger" id="menuBtn" aria-expanded="false" aria-controls="menuList" aria-label="Toggle menu">☰</button>
+                <ul id="menuList">
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="nav-actions">
+                <button class="btn ghost" id="themeToggle" type="button" aria-label="Toggle theme">🌓 Theme</button>
+                <a class="btn ghost" href="https://github.com/Sridharank002" target="_blank" rel="noopener">GitHub</a>
+                <a class="btn brand" href="/Sridharan K Resume.pdf" download>Download Resume</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="home" class="container">
+        <!-- --------------- HERO --------------- -->
+        <section class="hero" aria-label="Intro">
+            <div class="wrap">
+                <div>
+                    <p class="eyebrow">Full‑Stack / Front‑End Developer</p>
+                    <h1>Hi, I’m <span style="color:var(--brand)">Sridharan</span>.<br /> I build fast, accessible web apps.</h1>
+                    <p class="lead">I focus on clean UI, performance, and inclusive UX in Front‑End. Recently, I'm Learning MERN‑Stack Development. </p>
+                    <div class="cta">
+                        <a class="btn brand" href="#projects">See My Work</a>
+                        <a class="btn ghost" href="#contact">Contact Me</a>
+                    </div>
+                    <div style="margin-top:1rem; display:flex; gap:.5rem; flex-wrap:wrap">
+                        <span class="chip">HTML</span>
+                        <span class="chip">CSS</span>
+                        <span class="chip">JavaScript</span>
+                        <span class="chip">Python</span>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <img src="./croppedcircle-image.com.png" alt="Sridharan" loading="lazy" width="320" height="320" />
+                </div>
+            </div>
+        </section>
+
+        <!-- --------------- PROJECTS --------------- -->
+        <section id="projects" aria-label="Projects">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="grid projects" id="projectGrid">
+                <article class="card project" data-tags="javascript,frontend">
+                    <img src="https://images.unsplash.com/photo-1526498460520-4c246339dccb?q=80&w=1200&auto=format&fit=crop" alt="Dashboard preview" loading="lazy" />
+                    <h3>Analytics Dashboard</h3>
+                    <p>Responsive dashboard with charts and real‑time widgets. Built with vanilla JS and Canvas.</p>
+                    <div class="links">
+                        <a class="tag" href="#" target="_blank" rel="noopener">Live</a>
+                        <a class="tag" href="#" target="_blank" rel="noopener">Code</a>
+                    </div>
+                </article>
+                <article class="card project" data-tags="python,ai">
+                    <img src="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?q=80&w=1200&auto=format&fit=crop" alt="AI project preview" loading="lazy" />
+                    <h3>Speech → Sign Avatar</h3>
+                    <p>Python app converting speech to sign animations (GIF avatar). Whisper + custom gesture mapping.</p>
+                    <div class="links">
+                        <a class="tag" href="#" target="_blank" rel="noopener">Demo</a>
+                        <a class="tag" href="#" target="_blank" rel="noopener">Repo</a>
+                    </div>
+                </article>
+                <article class="card project" data-tags="frontend,performance">
+                    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1200&auto=format&fit=crop" alt="Website speed" loading="lazy" />
+                    <h3>Portfolio Boilerplate</h3>
+                    <p>Ultra‑light starter with semantic HTML, accessible components, and 100/100 Lighthouse scores.</p>
+                    <div class="links">
+                        <a class="tag" href="#" target="_blank" rel="noopener">Template</a>
+                        <a class="tag" href="#" target="_blank" rel="noopener">Docs</a>
+                    </div>
+                </article>
+            </div>
+            <!-- Simple project filter -->
+            <div style="margin-top:1rem; display:flex; gap:.5rem; flex-wrap:wrap">
+                <button class="btn ghost" data-filter="all">All</button>
+                <button class="btn ghost" data-filter="frontend">Front‑End</button>
+                <button class="btn ghost" data-filter="javascript">JavaScript</button>
+                <button class="btn ghost" data-filter="python">Python</button>
+                <button class="btn ghost" data-filter="ai">AI</button>
+            </div>
+        </section>
+
+        <!-- --------------- SKILLS --------------- -->
+        <section id="skills" aria-label="Skills">
+            <h2 class="section-title">Skills</h2>
+            <div class="grid skills">
+                <div class="card"><strong>Frontend</strong><span class="muted"> • HTML <br> • CSS <br> • JS <br> • React</span></div>
+                <div class="card"><strong>Backend</strong><span class="muted"> • Node.js <br> • Express <br> • Python <br> • Flask</span></div>
+                <div class="card"><strong>Tools</strong><span class="muted"> • Git <br> • Docker <br> • CI/CD</span></div>
+                <div class="card"><strong>AI/ML</strong><span class="muted"> • Whisper <br> • OpenCV <br> • LLM APIs</span></div>
+                <div class="card"><strong>Testing</strong><span class="muted"> • Jest <br> • PyTest</span></div>
+            </div>
+        </section>
+
+        <!-- --------------- EXPERIENCE --------------- -->
+        <section id="experience" aria-label="Experience & Education">
+            <h2 class="section-title">Experience</h2>
+            <div class="card timeline">
+                <div class="t-item">
+                    <h3>Freelance Developer <span class="chip">2025 – Present</span></h3>
+                    <div class="t-meta"><span>Remote</span> • <span class="muted">Web apps, UI engineering, automation</span></div>
+                    <p>Built responsive, accessible front‑ends, integrated APIs, and optimized performance for clients in ed‑tech and health.</p>
+                </div>
+                <div class="t-item">
+                    <h3>Academic Projects <span class="chip">2024 – 2025</span></h3>
+                    <div class="t-meta"><span>Anna University</span> • <span class="muted">Chennai</span></div>
+                    <p>Conversion of Speech‑to‑sign Language Avatar System using Python, Whisper, and Animated GIF Pipelines.</p>
+                </div>
+                <div class="t-item">
+                    <h3>Intern project <span class="chip">2023</span></h3>
+                    <div class="t-meta"><span>Emglitz Technologies</span> • <span class="muted">Salem</span></div>
+                    <p>Event Management System in Android using Firebase Retrofit, Volley and Room Persistence Libraries.</p>
+                </div>
+                <div class="t-item">
+                    <h3>Academic project <span class="chip">2020 – 2021</span></h3>
+                    <div class="t-meta"><span>Dote</span> • <span class="muted">Chennai</span></div>
+                    <p>Gesture Vocalizer for Deaf and Dumb using Arduino UNO, Sensors, and Micro Controller C Programming.</p>
+                </div>
+            </div>
+
+            <!-- --------------- EDUCATION --------------- -->
+
+            <h2 class="section-title" style="margin-top:2rem">Education</h2>
+            <div class="card timeline">
+                <div class="t-item">
+                    <h3>B.E. in Computer Science <span class="chip">2022 – 2025</span></h3>
+                    <div class="t-meta"><span>SSM Institute</span> • <span class="muted">Namakkal, Tamilnadu</span></div>
+                    <p>Activities: Coding club, Coursework: DSA, Web, MS Office.</p>
+                </div>
+                <div class="t-item">
+                    <h3>Diploma in Electronics and Communication engineering<span class="chip">2018 – 2021</span></h3>
+                    <div class="t-meta"><span>CSI Polytechnic College</span> • <span class="muted">Salem, Tamilnadu</span></div>
+                    <p>Activities: Micro Controller, C Programming, PCB Design and DPCO.</p>
+                </div>
+                </>
+        </section>
+
+        <!-- --------------- CONTACT --------------- -->
+
+        <div class="card">
+            <h3>Find me online</h3>
+            <p class="muted">I’m open to freelance or full‑time roles. Let’s build something useful.</p>
+            <p>
+                <a href="mailto:sridharan8847@gmail.com">sridharan8847@gmail.com</a><br/>
+                <a href="https://github.com/Sridharank002" target="_blank" rel="noopener">https://github.com/Sridharank002</a><br/>
+                <a href="https://www.linkedin.com/in/sridharan8847/" target="_blank" rel="noopener">linkedin.com/in/sridharan8847</a>
+            </p>
+        </div>
+        </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div style="display:flex; justify-content:space-between; gap:1rem; flex-wrap:wrap; align-items:center">
+                <p>© <span id="year"></span> Sridharan. All rights reserved.</p>
+                <div style="display:flex; gap:.5rem; flex-wrap:wrap">
+                    <span class="chip">Performance‑first</span>
+                    <span class="chip">Accessible</span>
+                    <span class="chip">Responsive</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
